@@ -4,76 +4,76 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7710770744643166824
-    second: Turret Bot_0
+    second: Turret Bot Back 1
   - first:
       213: -8838089749053099928
-    second: Turret Bot_1
+    second: Turret Bot Back 2
   - first:
       213: 4259380042536738666
-    second: Turret Bot_2
+    second: Turret Bot Back 3
   - first:
       213: 5707308852231430485
-    second: Turret Bot_3
+    second: Turret Bot Back 4
   - first:
       213: -2839962810495328425
-    second: Turret Bot_4
+    second: Turret Bot Front 1
   - first:
       213: -7342225925175923335
-    second: Turret Bot_5
+    second: Turret Bot Front 2
   - first:
       213: -4004118610985476186
-    second: Turret Bot_6
+    second: Turret Bot Front 3
   - first:
       213: -4467436892107798166
-    second: Turret Bot_7
+    second: Turret Bot Front 4
   - first:
       213: 2001289030013238462
-    second: Turret Bot_8
+    second: Turret Bot Side 1
   - first:
       213: -5061908687338626619
-    second: Turret Bot_9
+    second: Turret Bot Side 2
   - first:
       213: -619115957590753848
-    second: Turret Bot_10
+    second: Turret Bot Side 3
   - first:
       213: 1541190068152747872
-    second: Turret Bot_11
+    second: Turret Bot Side 4
   - first:
       213: 8074563102465272558
-    second: Turret Bot_0
+    second: Turret Bot Back 1
   - first:
       213: 1205828865346651633
-    second: Turret Bot_1
+    second: Turret Bot Back 2
   - first:
       213: -2155344522067604680
-    second: Turret Bot_2
+    second: Turret Bot Back 3
   - first:
       213: 4887222044854814150
-    second: Turret Bot_3
+    second: Turret Bot Back 4
   - first:
       213: 8751277426458107726
-    second: Turret Bot_4
+    second: Turret Bot Front 1
   - first:
       213: 8158255153881729060
-    second: Turret Bot_5
+    second: Turret Bot Front 2
   - first:
       213: 4674524307005973053
-    second: Turret Bot_6
+    second: Turret Bot Front 3
   - first:
       213: -7011138133299296263
-    second: Turret Bot_7
+    second: Turret Bot Front 4
   - first:
       213: -5966671294990992198
-    second: Turret Bot_8
+    second: Turret Bot Side 1
   - first:
       213: 6415364245519896938
-    second: Turret Bot_9
+    second: Turret Bot Side 2
   - first:
       213: 5078535666481104
-    second: Turret Bot_10
+    second: Turret Bot Side 3
   - first:
       213: 7563352494278377349
-    second: Turret Bot_11
+    second: Turret Bot Side 4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -150,7 +150,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -162,7 +162,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -173,15 +173,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Turret Bot_0
+      name: Turret Bot Back 1
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 16
-        height: 32
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,15 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_1
+      name: Turret Bot Back 2
       rect:
         serializedVersion: 2
         x: 16
         y: 64
         width: 16
-        height: 32
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,15 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_2
+      name: Turret Bot Back 3
       rect:
         serializedVersion: 2
         x: 32
         y: 64
         width: 16
-        height: 32
+        height: 20
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,15 +236,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_3
+      name: Turret Bot Back 4
       rect:
         serializedVersion: 2
         x: 48
         y: 64
         width: 16
-        height: 32
+        height: 20
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,15 +257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_4
+      name: Turret Bot Front 1
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 16
-        height: 32
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,15 +278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_5
+      name: Turret Bot Front 2
       rect:
         serializedVersion: 2
         x: 16
         y: 32
         width: 16
-        height: 32
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,15 +299,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_6
+      name: Turret Bot Front 3
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 16
-        height: 32
+        height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,15 +320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_7
+      name: Turret Bot Front 4
       rect:
         serializedVersion: 2
         x: 48
         y: 32
         width: 16
-        height: 32
+        height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,15 +341,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_8
+      name: Turret Bot Side 1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 32
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,15 +362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_9
+      name: Turret Bot Side 2
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 32
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,15 +383,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_10
+      name: Turret Bot Side 3
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 32
+        height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,15 +404,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret Bot_11
+      name: Turret Bot Side 4
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 32
+        height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
