@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class WaveMaker : MonoBehaviour
 {
-    public GameObject EnemyPrefab;
-    public GameObject EnemyParent;
-    public Vector3 StartPosition;
+    public RobotMovement EnemyPrefab;
+    public GameObject[] guidePosts;
+    public float enemySpeed;
 
-    private List<GameObject> Enemies;
+    private List<RobotMovement> Enemies;
+    private float nextEnemy = 0;
+    private float waveTime = 0;
     private int currentWave = 0;
     private bool running = false;
-    private float waveTime = 0;
-    private float nextEnemy = 0;
 
     void Start()
     {
-        Enemies = new List<GameObject>();
+        Enemies = new List<RobotMovement>();
     }
 
     void Update()
@@ -44,8 +44,9 @@ public class WaveMaker : MonoBehaviour
     }
 
     void makeBot(){
-        GameObject newEnemy = Instantiate(EnemyPrefab, StartPosition, Quaternion.identity);
-        newEnemy.transform.parent = EnemyParent.transform;
+        RobotMovement newEnemy = Instantiate(EnemyPrefab, new Vector2(0,0), Quaternion.identity);
+        newEnemy.guidePosts = guidePosts;
+        newEnemy.speed = enemySpeed;
         Enemies.Add(newEnemy);
     }
 }
