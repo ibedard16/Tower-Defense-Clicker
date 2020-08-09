@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
+    - target: {fileID: 3237274766059933241, guid: 0f3772d884c86a64dbcbd6a171b182ee, type: 3}
+      propertyPath: m_SortingOrder
+      value: -100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f3772d884c86a64dbcbd6a171b182ee, type: 3}
 --- !u!1 &1217804343 stripped
@@ -338,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6152891849006879675, guid: a22b05c7d05d36a4fba4cf8c66822502, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.18235825
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6152891849006879675, guid: a22b05c7d05d36a4fba4cf8c66822502, type: 3}
       propertyPath: m_LocalRotation.x
