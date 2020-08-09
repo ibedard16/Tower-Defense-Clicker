@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaveMaker : MonoBehaviour
 {
     public RobotMovement EnemyPrefab;
+    public GameObject EnemyContainer;
     public GameObject[] guidePosts;
     public float enemySpeed;
 
@@ -47,6 +48,7 @@ public class WaveMaker : MonoBehaviour
         RobotMovement newEnemy = Instantiate(EnemyPrefab, new Vector2(0,0), Quaternion.identity);
         newEnemy.guidePosts = guidePosts;
         newEnemy.speed = enemySpeed;
+        newEnemy.transform.parent = EnemyContainer.transform;
         Enemies.Add(newEnemy);
     }
 }
