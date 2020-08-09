@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WaveMaker : MonoBehaviour
 {
+    public TurretMaker TM;
     public RobotMovement EnemyPrefab;
     public GameObject EnemyContainer;
     public GameObject[] guidePosts;
@@ -50,5 +51,9 @@ public class WaveMaker : MonoBehaviour
         newEnemy.speed = enemySpeed;
         newEnemy.transform.parent = EnemyContainer.transform;
         Enemies.Add(newEnemy);
+    }
+
+    public List<RobotMovement> getRobots(){
+        return Enemies;
     }
 }

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class TurretMaker : MonoBehaviour
 {
+    public WaveMaker WM;
     public GameObject TurretParent;
-    public GameObject TurretPrefab;
+    public Turret TurretPrefab;
     
-    private List<GameObject> TurretList;
+    private List<Turret> TurretList;
 
     void Start()
     {
-        TurretList = new List<GameObject>();
+        TurretList = new List<Turret>();
     }
 
     void Update()
@@ -23,8 +24,9 @@ public class TurretMaker : MonoBehaviour
     }
 
     void makeTurret(Vector3 p){
-        GameObject newTurret = Instantiate(TurretPrefab, new Vector3(p.x, p.y, 0), Quaternion.identity);
+        Turret newTurret = Instantiate(TurretPrefab, new Vector3(p.x, p.y, 0), Quaternion.identity);
         newTurret.transform.parent = TurretParent.transform;
+        newTurret.parent = this;
         TurretList.Add(newTurret);
     }
 }
