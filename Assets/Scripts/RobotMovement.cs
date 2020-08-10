@@ -16,10 +16,6 @@ public class RobotMovement : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
-        TeleportToFirstPost();
-    }
-
-    void TeleportToFirstPost() {
         transform.position = guidePosts[0].transform.position;
         currentGuidePost = 0;
         TargetNextGuidePost();
@@ -41,7 +37,7 @@ public class RobotMovement : MonoBehaviour
 
     void TargetNextGuidePost() {
         if (currentGuidePost == guidePosts.Length - 1) {
-            TeleportToFirstPost();
+            RemovePlayerHealth();
             return;
         }
 
@@ -61,6 +57,11 @@ public class RobotMovement : MonoBehaviour
         }
 
         currentGuidePost += 1;
+    }
+
+    void RemovePlayerHealth() {
+        wave.RemoveLife();
+        ExplosionEnd();
     }
 
     public void Kill() {
