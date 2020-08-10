@@ -53,8 +53,4 @@ public class WaveMaker : MonoBehaviour
         newEnemy.wave = this;
         Enemies.Add(newEnemy);
     }
-
-    public List<RobotMovement> getRobots(){
-        return Enemies;
-    }
 }
