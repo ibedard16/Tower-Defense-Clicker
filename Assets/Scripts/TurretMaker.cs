@@ -7,19 +7,26 @@ public class TurretMaker : MonoBehaviour
     public WaveMaker WM;
     public GameObject TurretParent;
     public Turret TurretPrefab;
+    public int TurretsRemaining = 3;
+    public GameObject TurretText;
     
     private List<Turret> TurretList;
 
     void Start()
     {
         TurretList = new List<Turret>();
+        TurretText.GetComponent<UnityEngine.UI.Text>().text = "" + TurretsRemaining;
     }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(1)) {
             Vector3 p = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            makeTurret(p);
+            if(TurretsRemaining > 0){
+                TurretsRemaining -= 1;
+                TurretText.GetComponent<UnityEngine.UI.Text>().text = "" + TurretsRemaining;
+                makeTurret(p);
+            }
         }
     }
 
