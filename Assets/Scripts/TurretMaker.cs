@@ -26,7 +26,7 @@ public class TurretMaker : MonoBehaviour
         BotsKilled += 1;
         BotText.GetComponent<UnityEngine.UI.Text>().text = "" + BotsKilled;
         if(BotsKilled == WM.WaveSize){
-            VictoryText.GetComponent<UnityEngine.UI.Text>().text = "Victory";
+            VictoryText.GetComponent<UnityEngine.UI.Text>().text = "Victory!";
         }
     }
 
