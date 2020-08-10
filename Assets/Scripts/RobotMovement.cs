@@ -62,7 +62,7 @@ public class RobotMovement : MonoBehaviour
         currentGuidePost += 1;
     }
 
-    void Kill() {
+    public void Kill() {
         alive = false;
         animator.Play("Explosion");
     }

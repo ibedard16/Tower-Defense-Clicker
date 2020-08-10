@@ -46,7 +46,7 @@ public class WaveMaker : MonoBehaviour
     }
 
     void makeBot(){
-        RobotMovement newEnemy = Instantiate(EnemyPrefab, new Vector2(0,0), Quaternion.identity);
+        RobotMovement newEnemy = Instantiate(EnemyPrefab, new Vector2(100, 100), Quaternion.identity);
         newEnemy.guidePosts = guidePosts;
         newEnemy.speed = enemySpeed;
         newEnemy.transform.parent = EnemyContainer.transform;

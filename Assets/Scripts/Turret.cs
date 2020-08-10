@@ -66,6 +66,7 @@ public class Turret : MonoBehaviour
     }
 
     void Fire(RobotMovement r){
+        r.Kill();
         GameObject newLaser = Instantiate(LaserPrefab, new Vector3(0, 0, 1), Quaternion.identity);
         LineRenderer l = newLaser.GetComponent<LineRenderer>();
         l.SetPosition(0, transform.position + new Vector3(0, 0.2f, 0));
