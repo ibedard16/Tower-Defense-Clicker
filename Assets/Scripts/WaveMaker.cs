@@ -9,8 +9,8 @@ public class WaveMaker : MonoBehaviour
     public GameObject EnemyContainer;
     public GameObject[] guidePosts;
     public float enemySpeed;
+    public List<RobotMovement> Enemies;
 
-    private List<RobotMovement> Enemies;
     private float nextEnemy = 0;
     private float waveTime = 0;
     private int currentWave = 0;
@@ -50,6 +50,7 @@ public class WaveMaker : MonoBehaviour
         newEnemy.guidePosts = guidePosts;
         newEnemy.speed = enemySpeed;
         newEnemy.transform.parent = EnemyContainer.transform;
+        newEnemy.wave = this;
         Enemies.Add(newEnemy);
     }
 
