@@ -6,8 +6,11 @@ public class Turret : MonoBehaviour
 {
     public TurretMaker parent;
     public float fireSpeed = 1;
+    public float range = 3;
+    public GameObject LaserPrefab;
 
     private float cooldown = 0;
+    private GameObject MyLaser;
 
     void Start()
     {
@@ -29,27 +32,32 @@ public class Turret : MonoBehaviour
                         closest = r;
                     }
                 }
-                Vector3 diff = closest.transform.position - transform.position;
-                float ang = Vector3.Angle(diff, new Vector3(0, 1, 0));
 
-                if(ang > 157.5){
-                    TransitionTo("FireDown");
-                }else if(ang > 112.5 && diff.x > 0){
-                    TransitionTo("FireDownRight");
-                }else if(ang > 67.5 && diff.x > 0){
-                    TransitionTo("FireRight");
-                }else if(ang > 22.5 && diff.x > 0){
-                    TransitionTo("FireUpRight");
-                }else if(ang > 112.5 && diff.x < 0){
-                    TransitionTo("FireDownLeft");
-                }else if(ang > 67.5 && diff.x < 0){
-                    TransitionTo("FireLeft");
-                }else if(ang > 22.5 && diff.x < 0){
-                    TransitionTo("FireUpLeft");
-                }else{
-                    TransitionTo("FireUp");
+                if(min < range){
+                    Vector3 diff = closest.transform.position - transform.position;
+                    float ang = Vector3.Angle(diff, new Vector3(0, 1, 0));
+
+                    if(ang > 157.5){
+                        TransitionTo("FireDown");
+                    }else if(ang > 112.5 && diff.x > 0){
+                        TransitionTo("FireDownRight");
+                    }else if(ang > 67.5 && diff.x > 0){
+                        TransitionTo("FireRight");
+                    }else if(ang > 22.5 && diff.x > 0){
+                        TransitionTo("FireUpRight");
+                    }else if(ang > 112.5 && diff.x < 0){
+                        TransitionTo("FireDownLeft");
+                    }else if(ang > 67.5 && diff.x < 0){
+                        TransitionTo("FireLeft");
+                    }else if(ang > 22.5 && diff.x < 0){
+                        TransitionTo("FireUpLeft");
+                    }else{
+                        TransitionTo("FireUp");
+                    }
+
+                    Fire(closest);
                 }
-                Fire(closest);
+                
                 //print("Closest Robot: " + min);
             }else{
                 //print("No Robots");
@@ -58,6 +66,10 @@ public class Turret : MonoBehaviour
     }
 
     void Fire(RobotMovement r){
+        GameObject newLaser = Instantiate(LaserPrefab, new Vector3(0, 0, 1), Quaternion.identity);
+        LineRenderer l = newLaser.GetComponent<LineRenderer>();
+        l.SetPosition(0, transform.position + new Vector3(0, 0.2f, 0));
+        l.SetPosition(1, r.transform.position);
         cooldown = fireSpeed;
     }
 

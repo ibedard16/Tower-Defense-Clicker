@@ -116,4 +116,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  fireSpeed: 1
+  fireSpeed: 4
+  LaserPrefab: {fileID: 7299232961450428864, guid: 09367f25ed099e643b6f5c45bca5744d, type: 3}
