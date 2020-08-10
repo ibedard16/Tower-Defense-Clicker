@@ -10,6 +10,7 @@ public class TurretMaker : MonoBehaviour
     public int TurretsRemaining = 3;
     public GameObject TurretText;
     public GameObject BotText;
+    public GameObject VictoryText;
     public int BotsKilled = 0;
    
     private List<Turret> TurretList;
@@ -24,6 +25,9 @@ public class TurretMaker : MonoBehaviour
     public void AddKill(){
         BotsKilled += 1;
         BotText.GetComponent<UnityEngine.UI.Text>().text = "" + BotsKilled;
+        if(BotsKilled == WM.WaveSize){
+            VictoryText.GetComponent<UnityEngine.UI.Text>().text = "Victory";
+        }
     }
 
     void Update()
