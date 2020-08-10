@@ -10,6 +10,7 @@ public class WaveMaker : MonoBehaviour
     public GameObject[] guidePosts;
     public float enemySpeed;
     public List<RobotMovement> Enemies;
+    public int WaveSize = 15;
 
     private float nextEnemy = 0;
     private float waveTime = 0;
@@ -31,7 +32,7 @@ public class WaveMaker : MonoBehaviour
         }
 
         if(running){
-            if(waveTime > nextEnemy && nextEnemy < 5){
+            if(waveTime > nextEnemy && nextEnemy < WaveSize){
                 nextEnemy += 1;
                 makeBot();
             }
