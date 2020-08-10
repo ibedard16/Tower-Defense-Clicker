@@ -23,6 +23,7 @@ public class WaveMaker : MonoBehaviour
 
     void Update()
     {
+        waveTime += Time.deltaTime;
         if (Input.GetKeyDown("space") && running == false)
         {
             print("space key was pressed");
@@ -30,7 +31,6 @@ public class WaveMaker : MonoBehaviour
         }
 
         if(running){
-            waveTime += Time.deltaTime;
             if(waveTime > nextEnemy && nextEnemy < 5){
                 nextEnemy += 1;
                 makeBot();
