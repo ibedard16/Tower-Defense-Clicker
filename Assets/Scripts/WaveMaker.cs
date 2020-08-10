@@ -27,6 +27,10 @@ public class WaveMaker : MonoBehaviour
 
     public void RemoveLife(){
         lives -= 1;
+        if(lives <= 0){
+            lives = 0;
+            TM.VictoryText.GetComponent<UnityEngine.UI.Text>().text = "Game Over";
+        }
         LifeText.GetComponent<UnityEngine.UI.Text>().text = "" + lives;
     }
 

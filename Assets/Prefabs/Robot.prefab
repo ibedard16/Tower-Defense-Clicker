@@ -96,9 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e537060ba222ea4f8b3c9c9fd7fed55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 2
   guidePosts: []
   currentGuidePost: 0
+  wave: {fileID: 0}
+  alive: 1
 --- !u!95 &6558422672280467161
 Animator:
   serializedVersion: 3

@@ -592,7 +592,7 @@ PrefabInstance:
       objectReference: {fileID: 8049597174406398396, guid: 05efd0265d747ff44ad56815c0ab3ab0, type: 3}
     - target: {fileID: 6152891849006879674, guid: a22b05c7d05d36a4fba4cf8c66822502, type: 3}
       propertyPath: enemySpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6152891849006879674, guid: a22b05c7d05d36a4fba4cf8c66822502, type: 3}
       propertyPath: TM
@@ -684,6 +684,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2792334819682718059, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736767779392377841, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736767779392377841, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736767779392377841, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736767779392377841, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736767779392377841, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 168.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736767779392377841, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -26.009995
+      objectReference: {fileID: 0}
     - target: {fileID: 5750394546539024854, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
       propertyPath: m_Name
       value: Canvas
