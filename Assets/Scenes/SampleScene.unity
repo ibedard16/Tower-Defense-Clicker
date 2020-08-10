@@ -361,6 +361,10 @@ PrefabInstance:
       propertyPath: TurretText
       value: 
       objectReference: {fileID: 966980409}
+    - target: {fileID: 7611587970312072210, guid: 394e9d954238afd45b0855cc490a9c2a, type: 3}
+      propertyPath: BotText
+      value: 
+      objectReference: {fileID: 1065794451}
     - target: {fileID: 7611587970312072211, guid: 394e9d954238afd45b0855cc490a9c2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -449,6 +453,11 @@ Transform:
 --- !u!1 &966980409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3735178262832080320, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+  m_PrefabInstance: {fileID: 3735178262976861945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1065794451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3735178263012601723, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
   m_PrefabInstance: {fileID: 3735178262976861945}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1136714923
@@ -584,6 +593,10 @@ PrefabInstance:
       propertyPath: EnemyContainer
       value: 
       objectReference: {fileID: 937193565}
+    - target: {fileID: 6152891849006879674, guid: a22b05c7d05d36a4fba4cf8c66822502, type: 3}
+      propertyPath: LifeText
+      value: 
+      objectReference: {fileID: 1873816963}
     - target: {fileID: 6152891849006879675, guid: a22b05c7d05d36a4fba4cf8c66822502, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -639,6 +652,11 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 147998303840299649, guid: 0f3772d884c86a64dbcbd6a171b182ee, type: 3}
   m_PrefabInstance: {fileID: 1136714923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1873816963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3735178263255096639, guid: f3afff62f3cb9ee4d99bf4efa8b35c74, type: 3}
+  m_PrefabInstance: {fileID: 3735178262976861945}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2073762143 stripped
 GameObject:

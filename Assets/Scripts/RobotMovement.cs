@@ -64,6 +64,7 @@ public class RobotMovement : MonoBehaviour
     }
 
     public void Kill() {
+        wave.TM.AddKill();
         alive = false;
         animator.Play("Explosion");
     }

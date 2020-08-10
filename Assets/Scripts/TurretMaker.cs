@@ -9,13 +9,21 @@ public class TurretMaker : MonoBehaviour
     public Turret TurretPrefab;
     public int TurretsRemaining = 3;
     public GameObject TurretText;
-    
+    public GameObject BotText;
+    public int BotsKilled = 0;
+   
     private List<Turret> TurretList;
 
     void Start()
     {
         TurretList = new List<Turret>();
         TurretText.GetComponent<UnityEngine.UI.Text>().text = "" + TurretsRemaining;
+        BotText.GetComponent<UnityEngine.UI.Text>().text = "" + BotsKilled;
+    }
+
+    public void AddKill(){
+        BotsKilled += 1;
+        BotText.GetComponent<UnityEngine.UI.Text>().text = "" + BotsKilled;
     }
 
     void Update()

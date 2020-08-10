@@ -11,6 +11,8 @@ public class WaveMaker : MonoBehaviour
     public float enemySpeed;
     public List<RobotMovement> Enemies;
     public int WaveSize = 15;
+    public GameObject LifeText;
+    public int lives = 3;
 
     private float nextEnemy = 0;
     private float waveTime = 0;
@@ -20,6 +22,12 @@ public class WaveMaker : MonoBehaviour
     void Start()
     {
         Enemies = new List<RobotMovement>();
+        LifeText.GetComponent<UnityEngine.UI.Text>().text = "" + lives;
+    }
+
+    public void RemoveLife(){
+        lives -= 1;
+        LifeText.GetComponent<UnityEngine.UI.Text>().text = "" + lives;
     }
 
     void Update()
