@@ -22,12 +22,12 @@ public class Turret : MonoBehaviour
         cooldown -= Time.deltaTime;
         if(cooldown < 0) cooldown = 0;
         if(cooldown == 0){
-            if(parent.WM.getRobots().Count > 0){
-                float min = -1;
+            if(parent.WM.Enemies.Count > 0){
+                float min = float.PositiveInfinity;
                 RobotMovement closest = null;
-                foreach (RobotMovement r in parent.WM.getRobots()){
+                foreach (RobotMovement r in parent.WM.Enemies){
                     float dist = Vector3.Distance(r.transform.position, transform.position);
-                    if(dist < min || min == -1){
+                    if(dist < min && r.alive){
                         min = dist;
                         closest = r;
                     }

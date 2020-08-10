@@ -7,9 +7,10 @@ public class RobotMovement : MonoBehaviour
     public float speed;
     public GameObject[] guidePosts;
     public int currentGuidePost = 0;
+    public WaveMaker wave;
+    public bool alive = true;
 
     private Animator animator;
-    private bool alive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +69,7 @@ public class RobotMovement : MonoBehaviour
     }
 
     void ExplosionEnd() {
+        wave.Enemies.Remove(this);
         Destroy(gameObject);
     }
 }
