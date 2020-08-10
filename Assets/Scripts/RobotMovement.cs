@@ -9,6 +9,7 @@ public class RobotMovement : MonoBehaviour
     public int currentGuidePost = 0;
 
     private Animator animator;
+    private bool alive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,10 @@ public class RobotMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!alive) {
+            return;
+        }
+
         transform.position = Vector2.MoveTowards(transform.position, guidePosts[currentGuidePost].transform.position, speed * Time.deltaTime);
         var dist = Vector2.Distance(transform.position, guidePosts[currentGuidePost].transform.position);
         if (dist == 0) {
@@ -55,5 +60,14 @@ public class RobotMovement : MonoBehaviour
         }
 
         currentGuidePost += 1;
+    }
+
+    void Kill() {
+        alive = false;
+        animator.Play("Explosion");
+    }
+
+    void ExplosionEnd() {
+        Destroy(gameObject);
     }
 }
